@@ -1,9 +1,9 @@
 {
-	"id": "ec280171-c67b-4cf8-923f-dc27fea91ee1",
-	"authors": ["CubeCoders Limited", "AMP Community"],
-	"origin": "https://github.com/CubeCoders/AMPTemplates.git",
-	"url": "https://github.com/CubeCoders/AMPTemplates",
+	"id": "bf37143f-1a69-4299-a754-6af587905838",
+	"authors": ["stalder-n"],
+	"origin": "https://github.com/stalder-n/AMPTemplates.git",
+	"url": "https://github.com/stalder-n/AMPTemplates",
 	"imagefile": "",
-	"prefix": "",
+	"prefix": "ark-se-custom",
 	"repotype": "AppTemplates"
 }
