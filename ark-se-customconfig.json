@@ -1519,7 +1519,7 @@
     {
         "DisplayName": "Day/Night Cycle Speed Multiplier",
         "Category": "ARK SE:stadia_controller",
-        "Subcategory": "Multipliers:tune:3",
+        "Subcategory": "World:globe:3",
         "Description": "Sets the scaling factor for the server day/night cycle. The default value 1 sets the same speed as a singleplayer game, ie 1 minute real time = approx 28 minutes server time. A scale of 0.035 would set a day/night cycle of approx 24 hours real time",
         "Keywords": "day,night,cycle,speed,multiplier,daycyclespeedscale",
         "FieldName": "DayCycleSpeedScale",
@@ -1534,7 +1534,7 @@
     {
         "DisplayName": "Day Time Speed Multiplier",
         "Category": "ARK SE:stadia_controller",
-        "Subcategory": "Multipliers:tune:3",
+        "Subcategory": "World:globe:3",
         "Description": "Sets the scaling factor for the length of each server day, relative to the length of each night. Lowering this value increases the day length",
         "Keywords": "day,time,speed,multiplier,daytimespeedscale",
         "FieldName": "DayTimeSpeedScale",
@@ -1549,7 +1549,7 @@
     {
         "DisplayName": "Night Time Speed Multiplier",
         "Category": "ARK SE:stadia_controller",
-        "Subcategory": "Multipliers:tune:3",
+        "Subcategory": "World:globe:3",
         "Description": "Sets the scaling factor for the length of each server night, relative to the length of each day. Lowering this value increases the night length",
         "Keywords": "night,time,speed,multiplier,nighttimespeedscale",
         "FieldName": "NightTimeSpeedScale",
@@ -1564,7 +1564,7 @@
     {
         "DisplayName": "XP Multiplier",
         "Category": "ARK SE:stadia_controller",
-        "Subcategory": "Multipliers:tune:3",
+        "Subcategory": "World:globe:3",
         "Description": "Sets the scaling factor for experience (XP) received by players, tribes and creatures for various actions. The default value 1 provides the same experience as a singleplayer game. Higher values increase XP amounts awarded, lower values decrease it",
         "Keywords": "xp,experience,multiplier,xpmultiplier",
         "FieldName": "XPMultiplier",
@@ -1577,9 +1577,24 @@
         "EnumValues": {}
     },
     {
+        "DisplayName": "Harvest Amount Multiplier",
+        "Category": "ARK SE:stadia_controller",
+        "Subcategory": "World:globe:3",
+        "Description": "Sets the scaling factor for yields from all harvesting activities (chopping down trees, picking berries, carving carcasses, mining rocks, etc). Higher values increase the amount harvested with each strike",
+        "Keywords": "harvest,yield,multiplier,harvestamountmultiplier",
+        "FieldName": "HarvestAmountMultiplier",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "ParamFieldName": "HarvestAmountMultiplier",
+        "IncludeInCommandLine": true,
+        "DefaultValue": "1.000000",
+        "Placeholder": "1.000000",
+        "EnumValues": {}
+    },
+    {
         "DisplayName": "Player Food Drain Multiplier",
         "Category": "ARK SE:stadia_controller",
-        "Subcategory": "Multipliers:tune:3",
+        "Subcategory": "Players:person:4",
         "Description": "Sets the scaling factor for player characters' food consumption. Higher values increase food consumption (player characters get hungry faster)",
         "Keywords": "player,food,drain,hunger,multiplier,playercharacterfooddrainmultiplier",
         "FieldName": "PlayerCharacterFoodDrainMultiplier",
@@ -1594,7 +1609,7 @@
     {
         "DisplayName": "Player Water Drain Multiplier",
         "Category": "ARK SE:stadia_controller",
-        "Subcategory": "Multipliers:tune:3",
+        "Subcategory": "Players:person:4",
         "Description": "Sets the scaling factor for player characters' water consumption. Higher values increase water consumption (player characters get thirsty faster)",
         "Keywords": "player,water,drain,thirst,multiplier,playercharacterwaterdrainmultiplier",
         "FieldName": "PlayerCharacterWaterDrainMultiplier",
@@ -1609,7 +1624,7 @@
     {
         "DisplayName": "Player Health Recovery Multiplier",
         "Category": "ARK SE:stadia_controller",
-        "Subcategory": "Multipliers:tune:3",
+        "Subcategory": "Players:person:4",
         "Description": "Sets the scaling factor for player characters' health recovery. Higher values increase the recovery rate (player characters heal faster)",
         "Keywords": "player,health,recovery,multiplier,playercharacterhealthrecoverymultiplier",
         "FieldName": "PlayerCharacterHealthRecoveryMultiplier",
@@ -1624,7 +1639,7 @@
     {
         "DisplayName": "Player Stamina Drain Multiplier",
         "Category": "ARK SE:stadia_controller",
-        "Subcategory": "Multipliers:tune:3",
+        "Subcategory": "Players:person:4",
         "Description": "Sets the scaling factor for player characters' stamina consumption. Higher values increase stamina consumption (player characters get tired faster)",
         "Keywords": "player,stamina,drain,multiplier,playercharacterstaminadrainmultiplier",
         "FieldName": "PlayerCharacterStaminaDrainMultiplier",
@@ -1639,7 +1654,7 @@
     {
         "DisplayName": "Player Damage Multiplier",
         "Category": "ARK SE:stadia_controller",
-        "Subcategory": "Multipliers:tune:3",
+        "Subcategory": "Players:person:4",
         "Description": "Sets the scaling factor for the damage that players cause with their attacks. The default value 1 causes normal damage. Higher values increase damage, lower values decrease it",
         "Keywords": "player,damage,multiplier,playerdamagemultiplier",
         "FieldName": "PlayerDamageMultiplier",
@@ -1654,7 +1669,7 @@
     {
         "DisplayName": "Player Resistance Multiplier",
         "Category": "ARK SE:stadia_controller",
-        "Subcategory": "Multipliers:tune:3",
+        "Subcategory": "Players:person:4",
         "Description": "Sets the scaling factor for players' damage resistance when attacked. The default value 1 causes normal damage. Higher values decrease resistance, increasing damage per attack. Lower values increase it, reducing damage per attack",
         "Keywords": "player,resistance,multiplier,playerresistancemultiplier",
         "FieldName": "PlayerResistanceMultiplier",
@@ -1669,7 +1684,7 @@
     {
         "DisplayName": "Creature Food Drain Multiplier",
         "Category": "ARK SE:stadia_controller",
-        "Subcategory": "Multipliers:tune:3",
+        "Subcategory": "Multipliers:tune:6",
         "Description": "Sets the scaling factor for creatures' food consumption. Higher values increase food consumption (creatures get hungry faster)",
         "Keywords": "creature,food,drain,hunger,multiplier,dinocharacterfooddrainmultiplier",
         "FieldName": "DinoCharacterFoodDrainMultiplier",
@@ -1684,7 +1699,7 @@
     {
         "DisplayName": "Creature Health Recovery Multiplier",
         "Category": "ARK SE:stadia_controller",
-        "Subcategory": "Multipliers:tune:3",
+        "Subcategory": "Multipliers:tune:6",
         "Description": "Sets the scaling factor for creatures' health recovery. Higher values increase the recovery rate (creatures heal faster)",
         "Keywords": "creature,health,recovery,multiplier,dinocharacterhealthrecoverymultiplier",
         "FieldName": "DinoCharacterHealthRecoveryMultiplier",
@@ -1699,7 +1714,7 @@
     {
         "DisplayName": "Creature Stamina Drain Multiplier",
         "Category": "ARK SE:stadia_controller",
-        "Subcategory": "Multipliers:tune:3",
+        "Subcategory": "Multipliers:tune:6",
         "Description": "Sets the scaling factor for creatures' stamina consumption. Higher values increase stamina consumption (creatures get tired faster)",
         "Keywords": "creature,stamina,drain,multiplier,dinocharacterstaminadrainmultiplier",
         "FieldName": "DinoCharacterStaminaDrainMultiplier",
@@ -1714,7 +1729,7 @@
     {
         "DisplayName": "Creature Damage Multiplier",
         "Category": "ARK SE:stadia_controller",
-        "Subcategory": "Multipliers:tune:3",
+        "Subcategory": "Multipliers:tune:6",
         "Description": "Sets the scaling factor for the damage that wild creatures cause with their attacks. The default value 1 causes normal damage. Higher values increase damage, lower values decrease it",
         "Keywords": "creature,damage,multiplier,dinodamagemultiplier",
         "FieldName": "DinoDamageMultiplier",
@@ -1729,7 +1744,7 @@
     {
         "DisplayName": "Creature Resistance Multiplier",
         "Category": "ARK SE:stadia_controller",
-        "Subcategory": "Multipliers:tune:3",
+        "Subcategory": "Multipliers:tune:6",
         "Description": "Sets the scaling factor for wild creatures' damage resistance when attacked. The default value 1 causes normal damage. Higher values decrease resistance, increasing damage per attack. Lower values increase it, reducing damage per attack",
         "Keywords": "creature,resistance,multiplier,dinoresistancemultiplier",
         "FieldName": "DinoResistanceMultiplier",
@@ -1744,7 +1759,7 @@
     {
         "DisplayName": "Creature Spawn Multiplier",
         "Category": "ARK SE:stadia_controller",
-        "Subcategory": "Multipliers:tune:3",
+        "Subcategory": "Multipliers:tune:6",
         "Description": "Sets the scaling factor for creature spawns. Higher values increase the number of creatures spawned throughout the server",
         "Keywords": "creature,spawn,multiplier,dinocountmultiplier",
         "FieldName": "DinoCountMultiplier",
@@ -1759,7 +1774,7 @@
     {
         "DisplayName": "PvE Creature Decay Period Multiplier",
         "Category": "ARK SE:stadia_controller",
-        "Subcategory": "Multipliers:tune:3",
+        "Subcategory": "Multipliers:tune:6",
         "Description": "Set the scaling factor for the unclaiming speed of creatures in PvE mode",
         "Keywords": "pve,creature,decay,period,multiplier,pvedinodecayperiodmultiplier",
         "FieldName": "PvEDinoDecayPeriodMultiplier",
@@ -1774,7 +1789,7 @@
     {
         "DisplayName": "Structure Damage Multiplier",
         "Category": "ARK SE:stadia_controller",
-        "Subcategory": "Multipliers:tune:3",
+        "Subcategory": "Multipliers:tune:6",
         "Description": "Sets the scaling factor for the damage that structures (spikewalls) cause with their attacks. The default value 1 causes normal damage. Higher values increase damage, lower values decrease it",
         "Keywords": "structure,damage,multiplier,structuredamagemultiplier",
         "FieldName": "StructureDamageMultiplier",
@@ -1789,7 +1804,7 @@
     {
         "DisplayName": "Structure Resistance Multiplier",
         "Category": "ARK SE:stadia_controller",
-        "Subcategory": "Multipliers:tune:3",
+        "Subcategory": "Multipliers:tune:6",
         "Description": "Sets the scaling factor for structures' damage resistance when attacked. The default value 1 causes normal damage. Higher values decrease resistance, increasing damage per attack. Lower values increase it, reducing damage per attack",
         "Keywords": "structure,resistance,multiplier,structureresistancemultiplier",
         "FieldName": "StructureResistanceMultiplier",
@@ -1804,7 +1819,7 @@
     {
         "DisplayName": "PvE Structure Decay Period Multiplier",
         "Category": "ARK SE:stadia_controller",
-        "Subcategory": "Multipliers:tune:3",
+        "Subcategory": "Multipliers:tune:6",
         "Description": "Sets the scaling factor for the decay rate of player structures in PvE mode",
         "Keywords": "pve,structure,decay,pvestructuredecayperiodmultiplier",
         "FieldName": "PvEStructureDecayPeriodMultiplier",
@@ -1819,7 +1834,7 @@
     {
         "DisplayName": "Maximum Platform Structures Multiplier",
         "Category": "ARK SE:stadia_controller",
-        "Subcategory": "Multipliers:tune:3",
+        "Subcategory": "Multipliers:tune:6",
         "Description": "Sets the scaling factor for the maximum number of structures placeable on platform saddles and rafts. NOTE: high values may lead to lag",
         "Keywords": "saddle,platform,raft,structure,multiplier,perplatformmaxstructuresmultiplier",
         "FieldName": "PerPlatformMaxStructuresMultiplier",
@@ -1834,7 +1849,7 @@
     {
         "DisplayName": "Auto Structure Destruction Multiplier",
         "Category": "ARK SE:stadia_controller",
-        "Subcategory": "Multipliers:tune:3",
+        "Subcategory": "Multipliers:tune:6",
         "Description": "Sets the scaling factor, relative to the period for allowing claims, to automatically destroy structures if there has been no near tribe player during that time",
         "Keywords": "time,tribe,structure,destroy,autodestroyoldstructuresmultiplier",
         "FieldName": "AutoDestroyOldStructuresMultiplier",
@@ -1847,24 +1862,9 @@
         "EnumValues": {}
     },
     {
-        "DisplayName": "Harvest Amount Multiplier",
-        "Category": "ARK SE:stadia_controller",
-        "Subcategory": "Multipliers:tune:3",
-        "Description": "Sets the scaling factor for yields from all harvesting activities (chopping down trees, picking berries, carving carcasses, mining rocks, etc). Higher values increase the amount harvested with each strike",
-        "Keywords": "harvest,yield,multiplier,harvestamountmultiplier",
-        "FieldName": "HarvestAmountMultiplier",
-        "InputType": "number",
-        "IsFlagArgument": false,
-        "ParamFieldName": "HarvestAmountMultiplier",
-        "IncludeInCommandLine": true,
-        "DefaultValue": "1.000000",
-        "Placeholder": "1.000000",
-        "EnumValues": {}
-    },
-    {
         "DisplayName": "Harvest Health Multiplier",
         "Category": "ARK SE:stadia_controller",
-        "Subcategory": "Multipliers:tune:3",
+        "Subcategory": "World:globe:3",
         "Description": "Sets the scaling factor for the \"health\" of harvestable items (trees, rocks, carcasses, etc). Higher values increase the number of strikes needed to destroy them, increasing harvest yields",
         "Keywords": "harvest,health,multiplier,harvesthealthmultiplier",
         "FieldName": "HarvestHealthMultiplier",
@@ -1879,7 +1879,7 @@
     {
         "DisplayName": "Resources Respawn Period Multiplier",
         "Category": "ARK SE:stadia_controller",
-        "Subcategory": "Multipliers:tune:3",
+        "Subcategory": "World:globe:3",
         "Description": "Sets the scaling factor for the resource node respawn rate (trees, rocks, bushes, etc). Lower values cause nodes to respawn more frequently",
         "Keywords": "resource,respawn,period,multiplier,resourcesrespawnperiodmultiplier",
         "FieldName": "ResourcesRespawnPeriodMultiplier",
@@ -1894,7 +1894,7 @@
     {
         "DisplayName": "Creature Taming Speed Multiplier",
         "Category": "ARK SE:stadia_controller",
-        "Subcategory": "Multipliers:tune:3",
+        "Subcategory": "Multipliers:tune:6",
         "Description": "Sets the scaling factor for creature taming speed. Higher values make taming faster",
         "Keywords": "taming,speed,multiplier,tamingspeedmultiplier",
         "FieldName": "TamingSpeedMultiplier",
@@ -1909,7 +1909,7 @@
     {
         "DisplayName": "Oxygen Swim Speed Multiplier",
         "Category": "ARK SE:stadia_controller",
-        "Subcategory": "Multipliers:tune:3",
+        "Subcategory": "Multipliers:tune:6",
         "Description": "Sets the scaling factor for swim speed, relative to the level spent in oxygen",
         "Keywords": "swim,speed,oxygen,oxygenswimspeedstatmultiplier",
         "FieldName": "OxygenSwimSpeedStatMultiplier",
